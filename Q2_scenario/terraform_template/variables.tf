@@ -18,3 +18,4 @@ variable "adminUsername" {
 variable "adminPassword" {}
 variable "zones" {}
 variable "nsg" {}
+variable "storage_account_name" {}

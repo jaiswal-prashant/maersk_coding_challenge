@@ -90,3 +90,23 @@ nsg = {
         }
 }
 
+storage_account_name = {
+    storagetfstate1 = {
+        resource_group_name = "vnet-rg"
+        location = "canadaeast"
+        account_tier  = "Standard"
+        account_kind  = "StorageV2"
+        account_replication_type = "GRS"
+        access_tier    = "Hot"
+        enable_https_traffic_only = true
+        allow_blob_public_access = false
+        min_tls_version = "TLS1_2"
+        delete_retention_policy = "7"
+        container_delete_retention_policy = "7"
+        versioning_enabled = false
+        container_name = "tfstatefiles"
+        container_access_type = "private"
+        tags = {
+        }
+    }
+}
