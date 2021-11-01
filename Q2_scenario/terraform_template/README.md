@@ -1,3 +1,4 @@
+# Scenario 2
 Macro Life, a healthcare company has recently setup the entire Network and Infrastructure on Azure.
 The infrastructure has different components such as Virtual N/W, Subnets, NIC, IPs, NSG etc.
 The IT team currently has developed PowerShell scripts to deploy each component where all the
