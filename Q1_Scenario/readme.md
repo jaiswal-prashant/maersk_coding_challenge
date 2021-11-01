@@ -34,6 +34,11 @@ We need to Create a project form in Azure devops, then in the pipeline section b
    . Release Pipeline
           
 
-        Create a Release pipeline. This should have above CI pipeline stage as artifacts and then terraform init/plan/apply stage. This need to run on some agent hence we have to select various tasks to be added to job like 1. Terraform Installer (terraform verison and other details) 2. Command line - (to run terraform init -backend-config=../environments/backend.hcl -no-color terraform plan -var-file=../environments/terraform.tfvars -out ../plan_output -no-color) 3. Agentless job 4 Manual Intervention 5. Repeat 1,2 steps (but in command line we need to run terraform apply now terraform init -backend-config=../environments/backend.hcl -no-color terraform apply -auto-approve -var-file=../environments/terraform.tfvars -no-color) 
+        Create a Release pipeline. This should have above CI pipeline stage as artifacts and then terraform init/plan/apply stage. This need to run on some agent hence we have to select various tasks to be added to job like 
+        1. Terraform Installer (terraform verison and other details) 
+        2. Command line - (to run terraform init -backend-config=../environments/backend.hcl -no-color terraform plan -var-file=../environments/terraform.tfvars -out ../plan_output -no-color)
+        3. Agentless job
+        4 Manual Intervention
+        5. Repeat 1,2 steps (but in command line we need to run terraform apply now terraform init -backend-config=../environments/backend.hcl -no-color terraform apply -auto-approve -var-file=../environments/terraform.tfvars -no-color) 
 
         We need to repeat these steps thrice for Dev/QA/Prod
