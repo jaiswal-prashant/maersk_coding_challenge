@@ -1,3 +1,4 @@
+# Scenario 2
 Macro Life, a healthcare company has recently setup the entire Network and Infrastructure on Azure.
 The infrastructure has different components such as Virtual N/W, Subnets, NIC, IPs, NSG etc.
 The IT team currently has developed PowerShell scripts to deploy each component where all the
@@ -51,8 +52,8 @@ automated using Azure DevOps using IaC(Infrastructure as Code).
  1 Window VM in each subnet
  1 Storage account
 
-# Terraform teamplate to create various resources in Azure
-This directory contains terraform code to provision infrastructure resources for the company. This includes vnet, 2 subnet, nsg (to open port on 80,443 ), storage account & windows VM. You need terraform version atleast 0.13
+
+This below template contains terraform code to provision infrastructure resources for the company. This includes vnet, 2 subnet, nsg (to open port on 80,443 ), storage account & windows VM. You need terraform version atleast 0.13
 
 
 **Steps**
