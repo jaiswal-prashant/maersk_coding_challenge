@@ -1,5 +1,5 @@
-# Three tier app resource provisioning
-This directory contains terraform code to provision infrastructure resources for three tier application (web,app,db). You need terraform version atleast 0.12.31
+# Terraform teamplate to create various resources in Azure
+This directory contains terraform code to provision infrastructure resources for the company. This includes vnet, 2 subnet, nsg (to open port on 80,443 ), storage account & windows VM. You need terraform version atleast 0.13
 
 
 **Steps**
